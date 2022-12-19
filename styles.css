@@ -13,100 +13,129 @@
 font-family: 'Red Hat Display', sans-serif;
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 :root {
-    --bluegray: hsl(225, 100%, 98%);
-    --paleblue: hsl(225, 100%, 94%);
-    --desatblue: hsl(224, 23%, 55%);
-    --brightblue: hsl(245, 75%, 52%);
-    --dkblue: hsl(223, 47%, 23%);
+  --bluegray: hsl(225, 100%, 98%);
+  --paleblue: hsl(225, 100%, 94%);
+  --desatblue: hsl(224, 23%, 55%);
+  --brightblue: hsl(245, 75%, 52%);
+  --dkblue: hsl(223, 47%, 23%);
 }
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--paleblue);
-    background-image: url("images/pattern-background-mobile.svg");
-    background-position: top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    font-family: 'Red Hat Display', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--paleblue);
+  background-image: url("images/pattern-background-mobile.svg");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 main {
-    width: 87.2%;
-    border-radius: 1em;
-    background-color: white;
+  width: 87.2%;
+  border-radius: 1em;
+  background-color: white;
 }
 
 .hero-img {
-    width: 100%;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+  width: 100%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
 
 .order-summary-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5em;
-    margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 2em;
 }
 
 h1 {
-    font-size: 1.375rem;
-    color: var(--dkblue);
+  font-size: 1.375rem;
+  color: var(--dkblue);
 }
 
 .txt-content {
-    text-align: center;
-    line-height: 1.56;
-    font-size: 0.9375rem;
-    font-weight: 500;
-    color: var(--desatblue)
+  text-align: center;
+  line-height: 1.56;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--desatblue);
 }
 
 .annual-plan {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em;
-    border-radius: 0.75em;
-    background-color: var(--bluegray);
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 0.75em;
+  background-color: var(--bluegray);
 }
 
 .plan-desc {
-    text-align: center;
+  text-align: center;
 }
 
 h4 {
-    font-size: 0.875rem;
-    font-weight: 900;
+  font-size: 0.875rem;
+  font-weight: 900;
 }
 
 .plan-price {
-    font-size: 0.875rem;
-    color: var(--desatblue)
+  font-size: 0.875rem;
+  color: var(--desatblue);
 }
 
-.change-plan a{
-    color: var(--brightblue);
-    font-size: 0.8125rem;
-    font-weight: 700;
+.change-plan a {
+  color: var(--brightblue);
+  font-size: 0.8125rem;
+  font-weight: 700;
 }
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.proceed {
+    border-radius: 0.75em;
+    padding: 1em 4.27em;
+    background-color: var(--brightblue);
+    border: none;
+    color: white;
+    box-shadow: 0 1em 1em hsla(245, 75%, 52%, 25%);
+}
+
+.cancel {
+    background-color: transparent;
+    border: none;
+    color: var(--desatblue);
+}
+
+.proceed, .cancel {
+    font-size: 0.875rem;
+    font-weight: 900;
+    font-family: "Red Hat Display", sans-serif;
+    cursor: pointer;
+}
+
 /* Media query for responsive styling */
 @media (min-width: 768px) {
-    body {
-        background-image: url("images/pattern-background-desktop.svg");
-    }
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
+  }
 }
