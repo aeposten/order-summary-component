@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-W4avXra2aw](https://www.frontendmentor.io/solutions/order-summary-component-W4avXra2aw)
 - Live Site URL: [https://aeposten.github.io/order-summary-component/](https://aeposten.github.io/order-summary-component/)
 
 ## My process
